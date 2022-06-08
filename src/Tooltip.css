@@ -1,0 +1,24 @@
+.tooltip {
+  position: relative;
+}
+
+.tooltip:hover {
+  cursor: pointer;
+}
+
+.label {
+  visibility: hidden;
+  position: absolute;
+  width: max-content;
+
+  /* This centers the logo on top */
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+
+  z-index: 1;
+}
+
+.tooltip:hover .label {
+  visibility: visible;
+}

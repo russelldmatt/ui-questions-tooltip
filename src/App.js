@@ -1,13 +1,17 @@
 import logo from './logo.svg';
 import './App.css';
+import Tooltip from './Tooltip';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+        <Tooltip label="this is a logo">
+          <img src={logo} className="App-logo" alt="logo" />
+        </Tooltip>
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          Edit <code>src/App.js</code> and{' '}
+          <Tooltip label="this is a tooltip">save</Tooltip> to reload.
         </p>
         <a
           className="App-link"
@@ -15,7 +19,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
+          <Tooltip label="really, learn it">Learn React</Tooltip>
         </a>
       </header>
     </div>
